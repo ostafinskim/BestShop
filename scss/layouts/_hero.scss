@@ -18,20 +18,3 @@
     width: 100%;
   }
 }
-.cta {
-  display: inline-block;
-  background: $color-main;
-  border: none;
-  color: $color-white;
-  font-size: 1.6rem;
-  font-family: $font-openSans;
-  font-weight: 600;
-  padding: 2.2rem 15.7rem;
-  border-radius: 3rem;
-  &:hover {
-    cursor: pointer;
-  }
-  @media (max-width: 1080px) {
-    padding: 2.2rem 13rem;
-  }
-}

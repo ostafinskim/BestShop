@@ -31,6 +31,26 @@ a {
   margin: 10rem 0 12rem 0;
 }
 
+.cta {
+  display: inline-block;
+  background: #08a6e4;
+  border: none;
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 2.2rem 15.7rem;
+  border-radius: 3rem;
+}
+.cta:hover {
+  cursor: pointer;
+}
+@media (max-width: 950px) {
+  .cta {
+    padding: 2.2rem 5rem;
+  }
+}
+
 .header {
   box-shadow: 0px 0.3rem 0.6rem #00000029;
 }
@@ -170,26 +190,6 @@ a {
 .hero img {
   display: block;
   width: 100%;
-}
-
-.cta {
-  display: inline-block;
-  background: #08a6e4;
-  border: none;
-  color: #ffffff;
-  font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  padding: 2.2rem 15.7rem;
-  border-radius: 3rem;
-}
-.cta:hover {
-  cursor: pointer;
-}
-@media (max-width: 1080px) {
-  .cta {
-    padding: 2.2rem 13rem;
-  }
 }
 
 .info {
