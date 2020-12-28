@@ -26,6 +26,10 @@ a {
   display: grid;
   grid-template-columns: auto minmax(32rem, 135.2rem) auto;
 }
+.container-info {
+  grid-template-columns: 1fr minmax(32rem, 112.4rem) 1fr;
+  margin: 10rem 0 12rem 0;
+}
 
 .header {
   box-shadow: 0px 0.3rem 0.6rem #00000029;
