@@ -10,6 +10,12 @@ html {
   font-size: 62.5%;  // 1rem = 10px;
 }
 
+body {
+  font-family: sans-serif;
+  font-family: $font-raleway;
+  font-family: $font-openSans;
+}
+
 a {
   text-decoration: none;
 }
