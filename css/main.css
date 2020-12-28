@@ -191,4 +191,84 @@ a {
     padding: 2.2rem 13rem;
   }
 }
+
+.info {
+  grid-column: 2/3;
+  text-align: center;
+}
+.info__title {
+  font-size: 3.6rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-bottom: 10.1rem;
+}
+
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 980px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 3.4rem;
+  }
+}
+
+.card {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+}
+.card:nth-child(1) > :first-child {
+  background-color: #FB3B64;
+}
+.card:nth-child(1) > :first-child::before {
+  background: url("../../assets/person.svg") no-repeat;
+}
+.card:nth-child(2) > :first-child {
+  background-color: #08A6E4;
+}
+.card:nth-child(2) > :first-child::before {
+  background: url("../../assets/eye.svg") no-repeat;
+  top: 20%;
+}
+.card:nth-child(3) > :first-child {
+  background-color: #55DFB4;
+}
+.card:nth-child(3) > :first-child::before {
+  background: url("../../assets/catalog.svg") no-repeat;
+}
+.card__img {
+  justify-self: center;
+  height: 6.3rem;
+  width: 6.3rem;
+  border-radius: 50%;
+  position: relative;
+}
+.card__img::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  top: 10%;
+  right: -50%;
+}
+.card__title {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.596rem;
+  margin: 1.4rem 0 1.9rem 0;
+}
+.card__sub {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  justify-self: center;
+  color: #a5a5a5;
+}
 /*# sourceMappingURL=main.css.map */
