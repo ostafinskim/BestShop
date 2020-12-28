@@ -10,4 +10,10 @@
 html {
   font-size: 62.5%;
 }
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto minmax(37.5rem, 135.2rem) auto;
+}
 /*# sourceMappingURL=main.css.map */
