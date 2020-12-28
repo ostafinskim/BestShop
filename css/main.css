@@ -18,7 +18,7 @@ a {
 .container {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto minmax(37.5rem, 135.2rem) auto;
+  grid-template-columns: auto minmax(32rem, 135.2rem) auto;
 }
 
 .header {
