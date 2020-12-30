@@ -34,10 +34,6 @@ a {
   background: #f7f7f7;
 }
 
-.content__text {
-  line-height: 1.7;
-}
-
 .cta {
   display: inline-block;
   background: #08a6e4;
@@ -566,5 +562,8 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+.content__text {
+  line-height: 1.7;
 }
 /*# sourceMappingURL=main.css.map */
