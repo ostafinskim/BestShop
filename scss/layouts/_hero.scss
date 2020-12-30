@@ -9,9 +9,11 @@
     font-weight: 300;
   }
   &__sub {
+    width: 70%;
     font-size: 1.6rem;
     font-family: $font-openSans;
     margin-bottom: 3.8rem;
+    text-align: center;
   }
   img {
     display: block;

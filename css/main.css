@@ -183,9 +183,11 @@ a {
   font-weight: 300;
 }
 .hero__sub {
+  width: 70%;
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   margin-bottom: 3.8rem;
+  text-align: center;
 }
 .hero img {
   display: block;
