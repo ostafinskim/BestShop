@@ -34,6 +34,10 @@ a {
   background: #f7f7f7;
 }
 
+.content__text {
+  line-height: 1.7;
+}
+
 .cta {
   display: inline-block;
   background: #08a6e4;
