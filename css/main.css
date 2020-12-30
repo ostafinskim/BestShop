@@ -30,6 +30,9 @@ a {
   grid-template-columns: 1fr minmax(32rem, 112.4rem) 1fr;
   margin: 10rem 0 12rem 0;
 }
+.container-grid {
+  background: #f7f7f7;
+}
 
 .cta {
   display: inline-block;
