@@ -47,6 +47,12 @@ a {
 .container-form {
   grid-template-columns: 1fr minmax(32rem, 89.4rem) 1fr;
 }
+.container-footer {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 8.7rem;
+}
 
 .cta {
   display: inline-block;
