@@ -10,6 +10,7 @@
     background: $color-gridBg;
   }
   &-pricing {
+    margin-bottom: 10rem;
     padding: 0 1.6rem;
     display: grid;
     grid-template-columns: 1fr minmax(25.1rem, 126.6rem) 1fr;
