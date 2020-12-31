@@ -1,0 +1,125 @@
+.wrapper {
+  grid-column: 2/3;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: 980px) {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+.contact {
+  @media(min-width: 980px) {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3, max-content);
+  }
+  &__title {
+    font-size: 4rem;
+    font-family: $font-raleway;
+    font-weight: 400;
+    @media (min-width: 980px) {
+      font-size: 4.9rem;
+      margin-bottom: 2.2rem;
+      grid-column: 1/-1;
+    }
+  }
+  &__content {
+    margin: 0.5rem 0 4rem 0;
+    font-size: 1.6rem;
+    @media (min-width: 980px) {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+    }
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $color-inactiveNav;
+    img {
+      margin-right: 0.8rem;
+    }
+  }
+  :nth-child(4) {
+    margin-bottom: 2.5rem;
+    @media (min-width: 980px ) {
+      margin: 0;
+    }
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    :nth-child(2) {
+      margin-bottom: 4.2rem;
+    }
+    &-label {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.1rem;
+      letter-spacing: 0.328rem;
+      color: $color-main;
+      margin-bottom: 2rem;
+    }
+    &-input {
+      display: block;
+      height: 4.3rem;
+      outline: none;
+      border: none;
+      border-bottom: 0.1rem solid $color-inputBorder;
+      font-size: 1.6rem;
+      &::placeholder {
+        color: $color-inactiveNav;
+      }
+      &:focus {
+        border: 0.3rem solid $color-main;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+  &__label {
+    display: grid;
+    margin-bottom: 4rem;
+    .checkbox {
+      cursor: pointer;
+      display: flex;
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+      color: $color-consent;
+      span {
+        margin-right: 1.5rem;
+        height: 2.5rem;
+        flex-shrink: 0;
+        flex-basis: 2.5rem;
+        cursor: pointer;
+        border: 0.1rem solid $color-inputBorder;
+        border-radius: 0.4rem;
+      }
+    }
+    input[type='checkbox'] {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    .checkbox > input:checked + span {
+      background: url('../assets/checkmark-thick.svg') no-repeat;
+      background-position: center;
+    }
+    .cta {
+      padding: 2rem 9.7rem 1.9rem 9.7rem;
+      margin-top: 2.1rem;
+      justify-self: end;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+  }
+}

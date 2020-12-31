@@ -16,4 +16,7 @@
     grid-template-columns: 1fr minmax(25.1rem, 126.6rem) 1fr;
     grid-template-rows: max-content 1fr;
   }
+  &-form {
+    grid-template-columns: 1fr minmax(32rem, 89.4rem) 1fr;
+}
 }
