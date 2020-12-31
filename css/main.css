@@ -785,4 +785,147 @@ a {
   font-weight: 700;
   margin-top: 0.7rem;
 }
+
+.wrapper {
+  grid-column: 2/3;
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 980px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 980px) {
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, -webkit-max-content);
+    grid-template-rows: repeat(3, max-content);
+  }
+}
+.contact__title {
+  font-size: 4rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+@media (min-width: 980px) {
+  .contact__title {
+    font-size: 4.9rem;
+    margin-bottom: 2.2rem;
+    grid-column: 1/-1;
+  }
+}
+.contact__content {
+  margin: 0.5rem 0 4rem 0;
+  font-size: 1.6rem;
+}
+@media (min-width: 980px) {
+  .contact__content {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+  }
+}
+.contact__btn {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #a5a5a5;
+}
+.contact__btn img {
+  margin-right: 0.8rem;
+}
+.contact :nth-child(4) {
+  margin-bottom: 2.5rem;
+}
+@media (min-width: 980px) {
+  .contact :nth-child(4) {
+    margin: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form__field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form__field :nth-child(2) {
+  margin-bottom: 4.2rem;
+}
+.form__field-label {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.328rem;
+  color: #08a6e4;
+  margin-bottom: 2rem;
+}
+.form__field-input {
+  display: block;
+  height: 4.3rem;
+  outline: none;
+  border: none;
+  border-bottom: 0.1rem solid #95989A;
+  font-size: 1.6rem;
+}
+.form__field-input::-moz-placeholder {
+  color: #a5a5a5;
+}
+.form__field-input:-ms-input-placeholder {
+  color: #a5a5a5;
+}
+.form__field-input::placeholder {
+  color: #a5a5a5;
+}
+.form__field-input:focus {
+  border: 0.3rem solid #08a6e4;
+  border-radius: 0.5rem;
+}
+.form__label {
+  display: grid;
+  margin-bottom: 4rem;
+}
+.form__label .checkbox {
+  cursor: pointer;
+  display: flex;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  color: #707070;
+}
+.form__label .checkbox span {
+  margin-right: 1.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  flex-basis: 2.5rem;
+  cursor: pointer;
+  border: 0.1rem solid #95989A;
+  border-radius: 0.4rem;
+}
+.form__label input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.form__label .checkbox > input:checked + span {
+  background: url("../assets/checkmark-thick.svg") no-repeat;
+  background-position: center;
+}
+.form__label .cta {
+  padding: 2rem 9.7rem 1.9rem 9.7rem;
+  margin-top: 2.1rem;
+  justify-self: end;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
 /*# sourceMappingURL=main.css.map */
