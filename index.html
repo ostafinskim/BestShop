@@ -3,10 +3,193 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <title>BestShop</title>
 </head>
 <body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">BestShop</a>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link nav__link--focused">why us</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">benefits</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">prices</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">contact</a>
+        </li>
+      </ul>
+      <span class="nav__toggle nav__toggle--js">&#9776;</span>
+    </nav>
+    </div>
+  </header>
+  <section class="hero">
+    <h1 class="hero__title">Sell More!</h1>
+    <p class="hero__sub">Open shop on our platform and increase your sales</p>
+    <button class="cta">Open your shop</button>
+    <img src="./assets/background.png" alt="laptop">
+  </section>
+  <section class="container container-info">
+    <div class="info">
+      <h2 class="info__title">The most popular sales platform in country</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card__img"></div>
+          <h3 class="card__title">100000+</h3>
+          <span class="card__sub">daily entries</span>
+        </div>
+        <div class="card">
+          <div class="card__img"></div>
+          <h3 class="card__title">2000000+</h3>
+          <span class="card__sub">seen products <br> every day</span>
+        </div>
+        <div class="card">
+          <div class="card__img"></div>
+          <h3 class="card__title">10000+</h3>
+          <span class="card__sub">added post dialy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container container-grid">
+    <div class="grid">
+      <div class="row-one">
+        <section class="content">
+          <h3 class="content__title">Be always first</h3>
+          <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </section>
+        <div class="content__img">
+          <img class="img" src="/assets/macbook.png" alt="notebook">
+          <span class="decor"></span>
+        </div>
+      </div>
+      <div class="row-two">
+        <section class="content">
+          <h3 class="content__title">Your shop is where you are!</h3>
+          <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </section>
+        <div class="content__img">
+          <img class="img" src="/assets/iphone.png" alt="iphone">
+          <span class="decor"></span>
+        </div>
+      </div>
+      <div class="row-three">
+        <section class="content">
+          <h3 class="content__title">Increase recognition your brand!</h3>
+          <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </section>
+        <div class="content__img">
+          <img class="img" src="/assets/trumpet.png" alt="trumpet">
+        </div>
+    </div>
+  </div>
+  </div>
+  <section class="container-pricing">
+    <h2 class="pricing__title">Pricing</h2>
+    <div class="prices-grid">
+      <div class="box box-basic">
+        <section class="price">
+          <h3 class="price__title">Basic</h3>
+          <span class="price__sub">$0</span>
+        </section>
+        <ul class="details">
+          <li class="details__item">100 MB HDD</li>
+          <li class="details__item">1 Subdomain</li>
+          <li class="details__item">2 E-mails</li>
+          <li class="details__item">Two years license</li>
+          <li class="details__item">Full support</li>
+        </ul>
+        <button class="cta">Begin</button>
+      </div>
+      <div class="box box-proffesional">
+        <section class="price">
+          <h3 class="price__title">Proffesional</h3>
+          <span class="price__sub">$25</span>
+          <span class="limited">Limited offer</span>
+        </section>
+        <ul class="details">
+          <li class="details__item">500 MB HDD</li>
+          <li class="details__item">2 Subdomain</li>
+          <li class="details__item">5 E-mails</li>
+          <li class="details__item">One years license</li>
+          <li class="details__item">Full support</li>
+        </ul>
+        <button class="cta">Begin</button>
+      </div>
+      <div class="box box-premium">
+        <section class="price">
+          <h3 class="price__title">Premium</h3>
+          <span class="price__sub">$60</span>
+          <span class="limited">Limited offer</span>
+        </section>
+        <ul class="details">
+          <li class="details__item">2 GB HDD</li>
+          <li class="details__item">5 Subdomain</li>
+          <li class="details__item">20 E-mails</li>
+          <li class="details__item">Two years license</li>
+          <li class="details__item">Full support</li>
+        </ul>
+        <button class="cta">Begin</button>
+      </div>
+    </div>
+  </section>
+  <div class="container container-form">
+    <div class="wrapper">
+      <section class="contact">
+        <h3 class="contact__title">Any questions?</h3>
+        <p class="contact__content">Leave your email address or contact us!</p>
+        <a class="contact__btn" href="#">
+          <img src="assets/mail_icon.svg" alt="mail icon">
+          info@bestshop.xyz
+        </a>
+        <a class="contact__btn" href="#">
+          <img src="assets/phone_icon.svg" alt="phone icon">
+          123 456 789
+        </a>
+      </section>
+        <form class="form">
+          <p class="form__field">
+            <label for="name" class="form__field-label">Name</label>
+            <input type="text" id="name" class="form__field-input" placeholder="Please enter your name...">
+          </p>
+          <p class="form__field">
+            <label for="email" class="form__field-label">E-mail</label>
+            <input type="email" id="email" class="form__field-input" placeholder="Please enter your e-mail">
+          </p>
+          <div class="form__label">
+            <label class="checkbox">
+              <input type="checkbox">
+              <span></span>
+              I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)
+            </label>
+            <button class="cta" type="submit">Send</button>
+          </div>
+        </form>
+    </div>
+    </div>
+    <footer class="container shadow">
+      <div class="container-footer">
+        <div class="left">
+          <a href="#" class="logo">BestShop</a>
+          <span class="logo__copy">© 2019 BestShop LTD, All Rights Reserved</span>
+        </div>
+        <div class="socials">
+          <a href="#" class="social__link">
+            <img src="/assets/twitter.svg" alt="twitter logo">
+          </a>
+          <a href="#" class="social__link">
+            <img src="/assets/facebook.svg" alt="facebook logo">
+          </a>
+        </div>
+      </div>
+    </footer>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+/*
+  * PRICING SECTION MIXINS
+*/ 
+@mixin box($color, $borderRadius, $margin: 0) {
+  border: .2rem solid $color;
+  border-radius: $borderRadius;
+  margin: $margin;
+}
+@mixin price($box, $priceTitle, $priceTag, $color){
+  #{$box} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #{$priceTitle} {
+    font-size: 2rem;
+    font-family: $font-raleway;
+    font-weight: 700;
+  }
+  #{$priceTag} {
+    color: $color;
+    font-size: 4.6rem;
+    font-family: $font-openSans;
+    font-weight: 300;
+  }
+}
+@mixin priceCta($color){
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  padding: 1.6rem 5.7rem;
+  background: $color;
+  justify-self: center;
+  position: relative;
+  bottom: -26px;
+}

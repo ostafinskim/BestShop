@@ -1,0 +1,28 @@
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto minmax(32rem, 135.2rem) auto;
+  &-info {
+      grid-template-columns: 1fr minmax(32rem, 112.4rem) 1fr;
+      margin: 10rem 0 12rem 0;
+  }
+  &-grid {
+    background: $color-gridBg;
+  }
+  &-pricing {
+    margin-bottom: 10rem;
+    padding: 0 1.6rem;
+    display: grid;
+    grid-template-columns: 1fr minmax(25.1rem, 126.6rem) 1fr;
+    grid-template-rows: max-content 1fr;
+  }
+  &-form {
+    grid-template-columns: 1fr minmax(32rem, 89.4rem) 1fr;
+  }
+  &-footer {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 8.7rem;
+  }
+}

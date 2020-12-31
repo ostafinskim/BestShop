@@ -1,0 +1,121 @@
+.pricing {
+  &__title {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: center;
+    font-size: 3.6rem;
+    font-family: $font-raleway;
+    font-weight: 400;
+    margin: 5.334rem 0 1.4rem 0;
+  }
+}
+.prices-grid {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: minmax(33.3rem, 80%);
+  grid-template-rows: minmax(0, 25.1rem) minmax(0, 27.7rem) minmax(0, 25.1rem);
+  grid-row-gap: 5.4rem;
+  justify-content: center;
+  @media(min-width: 980px) {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 61rem;
+  grid-column-gap: 5.8rem;
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-basic {
+      padding: 0;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      margin: 2.7rem 0;
+    }
+    &-proffesional {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+    &-premium {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      margin: 2.7rem 0;
+    }
+    .cta {
+      align-self: center;
+    }
+  }
+  .price {
+    flex: 1;
+    &__title {
+      margin-bottom: 3.5rem;
+    }
+  }
+  .details {
+    flex: 1.5;
+    align-items: center;
+  }
+}
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  &__item {
+    height: 100%;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    display: flex;
+    &::before {
+      content: '';
+      width: 1.1rem;
+      height: 1.1rem;
+      display: inline-block;
+      align-self: center;
+      margin-right: 1rem;
+      background-image: url('../../assets/checkmark-all.svg');
+    }
+  }
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr max-content;
+  &-basic {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    padding: 2rem 0 0 1.3rem;
+    @include box($color-circleFirst, 3.1rem, 0 1rem);
+    @include price('.price', '.price__title', '.price__sub', $color-circleFirst);
+    .cta {
+      @include priceCta($color-circleFirst);
+        grid-column: 1/-1;
+        margin-right: 4rem;
+         };
+    .details__item:nth-last-of-type(-n + 2)::before { background-image: url('../../assets/close.svg'); }
+  }
+  &-proffesional {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    box-shadow: .5rem 1rem 2.7rem #07ACE629;
+    @include box($color-circleSecond, 3.1rem);
+    @include price('.price', '.price__title', '.price__sub', $color-circleSecond);
+    .cta {@include priceCta($color-circleSecond)};
+    .details__item:last-child::before { background-image: url('../../assets/close.svg'); }
+  }
+  &-premium {
+    grid-column: 1/-1;
+    grid-row: 3/4;
+    @include box($color-circleThird, 3.1rem, 0 2.3rem);
+    @include price('.price', '.price__title', '.price__sub', $color-circleThird);
+    .cta {@include priceCta($color-circleThird)};
+  }
+}
+
+.limited {
+  font-size: 1.2rem;
+  font-family: $font-raleway;
+  font-weight: 700;
+  margin-top: .7rem;
+}
