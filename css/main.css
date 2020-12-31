@@ -21,6 +21,9 @@ a {
   text-decoration: none;
 }
 
+/*
+  * PRICING SECTION MIXINS
+*/
 .container {
   margin: 0 auto;
   display: grid;
@@ -32,6 +35,13 @@ a {
 }
 .container-grid {
   background: #f7f7f7;
+}
+.container-pricing {
+  padding: 0 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr minmax(25.1rem, 126.6rem) 1fr;
+  grid-template-rows: -webkit-max-content 1fr;
+  grid-template-rows: max-content 1fr;
 }
 
 .cta {
