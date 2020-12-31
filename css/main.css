@@ -44,6 +44,9 @@ a {
   grid-template-rows: -webkit-max-content 1fr;
   grid-template-rows: max-content 1fr;
 }
+.container-form {
+  grid-template-columns: 1fr minmax(32rem, 89.4rem) 1fr;
+}
 
 .cta {
   display: inline-block;
