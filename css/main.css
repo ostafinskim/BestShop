@@ -628,6 +628,9 @@ a {
   .prices-grid .price {
     flex: 1;
   }
+  .prices-grid .price__title {
+    margin-bottom: 3.5rem;
+  }
   .prices-grid .details {
     flex: 1.5;
     align-items: center;

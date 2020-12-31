@@ -46,6 +46,9 @@
   }
   .price {
     flex: 1;
+    &__title {
+      margin-bottom: 3.5rem;
+    }
   }
   .details {
     flex: 1.5;
