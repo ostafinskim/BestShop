@@ -576,4 +576,206 @@ a {
 .content__text {
   line-height: 1.7;
 }
+
+.pricing__title {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  justify-self: center;
+  font-size: 3.6rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 5.334rem 0 1.4rem 0;
+}
+
+.prices-grid {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: minmax(33.3rem, 80%);
+  grid-template-rows: minmax(0, 25.1rem) minmax(0, 27.7rem) minmax(0, 25.1rem);
+  grid-row-gap: 5.4rem;
+  justify-content: center;
+}
+@media (min-width: 980px) {
+  .prices-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 61rem;
+    grid-column-gap: 5.8rem;
+  }
+  .prices-grid .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .prices-grid .box-basic {
+    padding: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 2.7rem 0;
+  }
+  .prices-grid .box-proffesional {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .prices-grid .box-premium {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin: 2.7rem 0;
+  }
+  .prices-grid .box .cta {
+    align-self: center;
+  }
+  .prices-grid .price {
+    flex: 1;
+  }
+  .prices-grid .details {
+    flex: 1.5;
+    align-items: center;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.details__item {
+  height: 100%;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  display: flex;
+}
+.details__item::before {
+  content: "";
+  width: 1.1rem;
+  height: 1.1rem;
+  display: inline-block;
+  align-self: center;
+  margin-right: 1rem;
+  background-image: url("../../assets/checkmark-all.svg");
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr -webkit-max-content;
+  grid-template-rows: 1fr max-content;
+}
+.box-basic {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  padding: 2rem 0 0 1.3rem;
+  border: 0.2rem solid #FB3B64;
+  border-radius: 3.1rem;
+  margin: 0 1rem;
+}
+.box-basic .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-basic .price__title {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.box-basic .price__sub {
+  color: #FB3B64;
+  font-size: 4.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.box-basic .cta {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  padding: 1.6rem 5.7rem;
+  background: #FB3B64;
+  justify-self: center;
+  position: relative;
+  bottom: -26px;
+  grid-column: 1/-1;
+  margin-right: 4rem;
+}
+.box-basic .details__item:nth-last-of-type(-n + 2)::before {
+  background-image: url("../../assets/close.svg");
+}
+.box-proffesional {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  box-shadow: 0.5rem 1rem 2.7rem #07ACE629;
+  border: 0.2rem solid #08A6E4;
+  border-radius: 3.1rem;
+  margin: 0;
+}
+.box-proffesional .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-proffesional .price__title {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.box-proffesional .price__sub {
+  color: #08A6E4;
+  font-size: 4.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.box-proffesional .cta {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  padding: 1.6rem 5.7rem;
+  background: #08A6E4;
+  justify-self: center;
+  position: relative;
+  bottom: -26px;
+}
+.box-proffesional .details__item:last-child::before {
+  background-image: url("../../assets/close.svg");
+}
+.box-premium {
+  grid-column: 1/-1;
+  grid-row: 3/4;
+  border: 0.2rem solid #55DFB4;
+  border-radius: 3.1rem;
+  margin: 0 2.3rem;
+}
+.box-premium .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box-premium .price__title {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.box-premium .price__sub {
+  color: #55DFB4;
+  font-size: 4.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.box-premium .cta {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  padding: 1.6rem 5.7rem;
+  background: #55DFB4;
+  justify-self: center;
+  position: relative;
+  bottom: -26px;
+}
+
+.limited {
+  font-size: 1.2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-top: 0.7rem;
+}
 /*# sourceMappingURL=main.css.map */
