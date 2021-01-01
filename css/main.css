@@ -648,14 +648,9 @@ a {
   font-weight: 400;
   display: flex;
 }
-.details__item::before {
-  content: "";
-  width: 1.1rem;
-  height: 1.1rem;
-  display: inline-block;
+.details__img {
   align-self: center;
-  margin-right: 1rem;
-  background-image: url("../../assets/checkmark-all.svg");
+  margin-right: 1.3rem;
 }
 
 .box {
@@ -700,9 +695,6 @@ a {
   grid-column: 1/-1;
   margin-right: 4rem;
 }
-.box-basic .details__item:nth-last-of-type(-n + 2)::before {
-  background-image: url("../../assets/close.svg");
-}
 .box-proffesional {
   grid-column: 1/-1;
   grid-row: 2/3;
@@ -736,9 +728,6 @@ a {
   justify-self: center;
   position: relative;
   bottom: -26px;
-}
-.box-proffesional .details__item:last-child::before {
-  background-image: url("../../assets/close.svg");
 }
 .box-premium {
   grid-column: 1/-1;
