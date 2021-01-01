@@ -16,46 +16,42 @@
     grid-template-columns: 1fr;
     gap: 3.4rem;
   }
+
 }
 .card {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: max-content;
-  &:nth-child(1) > :first-child {
-    background-color: $color-circleFirst;
-    &::before {
-      background: url('../../assets/person.svg') no-repeat;
+  &:nth-child(1) {
+    .card__img {
+      background: $color-circleFirst;
     }
   }
-  &:nth-child(2) > :first-child {
-    background-color: $color-circleSecond;
-    &::before {
-      background: url('../../assets/eye.svg') no-repeat;
-      top: 20%;
+  &:nth-child(2) {
+    .card__img {
+      background: $color-circleSecond;
+      img {
+        top: 20%;
+      }
     }
   }
-  &:nth-child(3) > :first-child {
-    background-color: $color-circleThird;
-    &::before {
-      background: url('../../assets/catalog.svg') no-repeat;
+  &:nth-child(3) {
+    .card__img {
+      background: $color-circleThird;
     }
   }
   &__img {
     justify-self: center;
+    display: flex;
     height: 6.3rem;
     width: 6.3rem;
     border-radius: 50%;
     position: relative;
-    &::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
+    img {
       position: absolute;
+      right: -35%;
       top: 10%;
-      right: -50%;
     }
   }
   &__title {
