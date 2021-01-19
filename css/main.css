@@ -33,7 +33,7 @@ a {
   grid-template-columns: 1fr minmax(32rem, 112.4rem) 1fr;
   margin: 10rem 0 12rem 0;
 }
-.container-grid {
+.container-grid, .container-calc {
   background: #f7f7f7;
 }
 .container-pricing {
@@ -72,6 +72,105 @@ a {
   .cta {
     padding: 2.2rem 5rem;
   }
+}
+
+.calc {
+  grid-column: 2/3;
+  padding: 8rem 3rem;
+  width: 100%;
+  max-width: 89rem;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: "title title" "form summary";
+  grid-template-rows: -webkit-max-content 1fr;
+  grid-template-rows: max-content 1fr;
+  grid-column-gap: 4.7rem;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 98rem) {
+  .calc {
+    grid-template-areas: "title title" "form form" "summary summary";
+  }
+}
+.calc__title {
+  grid-area: title;
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin-bottom: 5rem;
+}
+.calc__form {
+  grid-area: form;
+}
+.calc__summary {
+  grid-area: summary;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, -webkit-max-content);
+  grid-template-rows: repeat(2, max-content);
+}
+.calc__summary-list {
+  grid-row: 1/2;
+  list-style: none;
+  padding: 5rem 0;
+}
+.calc__input {
+  width: 100%;
+  padding: 1.1rem 0 1.1rem 2rem;
+  font-size: 1.3rem;
+  outline: none;
+  border: 0.1px solid #08a6e4;
+  border-radius: 0.6rem;
+}
+.calc__input::-moz-placeholder {
+  color: #a5a5a5;
+}
+.calc__input:-ms-input-placeholder {
+  color: #a5a5a5;
+}
+.calc__input::placeholder {
+  color: #a5a5a5;
+}
+.calc__input:focus {
+  border: 0.1rem solid #08a6e4;
+}
+
+.list__item {
+  box-shadow: 0px 0.3rem 0.6rem #00000029;
+  border-radius: 0.6rem;
+  color: #ffffff;
+  font-size: 1.675rem;
+  padding: 0.6rem 2rem;
+  background-color: #55DFB4;
+  margin-bottom: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.list__item__price {
+  font-weight: 700;
+  font-size: 1.635rem;
+}
+
+.summary__total {
+  justify-self: end;
+  align-self: end;
+  background: #08A6E4;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 6px;
+  padding: 0.6rem 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+}
+.summary__total-text {
+  margin-right: 2rem;
+}
+
+.hidden {
+  display: none;
 }
 
 .header {
@@ -911,6 +1010,25 @@ a {
   justify-self: end;
   font-size: 1.3rem;
   font-weight: 700;
+}
+
+.form__field select {
+  padding: 0 0 0 2rem;
+}
+
+.form__field-input--calc {
+  border: 0.1rem solid #08a6e4;
+  border-radius: 0.6rem;
+  padding-left: 2rem;
+}
+
+.checkbox--calc {
+  margin: 0;
+  padding: 0;
+}
+
+.form__label--calc .checkbox {
+  align-items: center;
 }
 
 .left {
