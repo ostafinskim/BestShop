@@ -30,7 +30,7 @@ const terminalLabel = document.querySelector('#terminal');
 const labelsArr = new Array(accountingLabel, terminalLabel);
 
 inputsArr.forEach((input) => {
-  input.addEventListener('change', (e) => {
+  input.addEventListener('input', (e) => {
     if (e.target.id === 'products') {
       productsCalc.textContent = `${e.target.value} * $0.5`;
       productsPrice.textContent = `$${e.target.value * 0.5}`;
@@ -84,6 +84,15 @@ function updateTotal() {
   summaryFields.forEach((item) => {
     pricesArr.push(Number(item.outerText.substring(1)));
   });
+
+  if(!accountingLabel.checked) {
+    pricesArr.splice(3, 1);
+  };
+  
+  if(!terminalLabel.checked) {
+    pricesArr.pop();
+  };
+
   let score = pricesArr.reduce((a, b) => {
     return a + b;
   }, 0);
