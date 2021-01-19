@@ -191,6 +191,74 @@
       </div>
     </div>
   </section>
+  <div class="container container-calc">
+    <section class="calc">
+      <h2 class="calc__title">Calculate how much you’ll pay</h2> 
+        <form class="calc__form">
+          <p class="form__field">
+            <label class="form__field-label" for="products">Products quantity</label>
+            <input type="number" class="form__field-input form__field-input--calc" id="products" min="1" step="1" placeholder="Products quantity"/>
+          </p>
+          <p class="form__field">
+            <label class="form__field-label" for="orders">Orders</label>
+            <input type="number" class="form__field-input form__field-input--calc" id="orders" min="1" step="1" placeholder="Estimated orders in month"/>
+          </p>
+          <p class="form__field">
+            <label class="form__field-label" for="package-select">Select package</label>
+            <select class="form__field-input form__field-input--calc" name="package-select" id="package">
+              <option data-value="basic">Basic</option>
+              <option data-value="professional">Professional</option>
+              <option data-value="premium">Premium</option>
+            </select>
+          </p>
+          <div class="form__label form__label--calc">
+            <label class="checkbox checkbox--calc">
+              <input type="checkbox" id="accounting">
+              <span></span>
+              Accounting
+            </label>
+          </div>
+          <div class="form__label form__label--calc">
+            <label class="checkbox checkbox--calc">
+              <input type="checkbox" id="terminal">
+              <span></span>
+              Rental of a payment terminal
+            </label>
+          </div>
+        </form>      
+        <div class="calc__summary">
+          <ul class="calc__summary-list">
+            <li class="list__item" data-id="products">
+              <span class="item__type">Products</span>
+              <span class="item__calc"></span>
+              <span class="item__price">$0</span>
+            </li>
+            <li class="list__item" data-id="orders">
+              <span class="item__type">Orders</span>
+              <span class="item__calc"></span>
+              <span class="item__price">$0</span>
+            </li>
+            <li class="list__item" data-id="package">
+              <span class="item__type">Package</span>
+              <span class="item__calc">Basic</span>
+              <span class="item__price">$0</span>
+            </li>
+            <li class="list__item hidden" data-id="accounting">
+              <span class="item__type">Accounting</span>
+              <span class="item__price">$0</span>
+            </li>
+            <li class="list__item hidden" data-id="terminal">
+              <span class="item__type">Terminal</span>
+              <span class="item__price">$0</span>
+            </li>
+          </ul>
+          <div class="summary__total" id="total-price">
+            <span class="summary__total-text">Total</span>
+            <span class="summary__total-price">$0</span>
+          </div>
+        </div>
+  </section>
+  </div>
   <div id="contact" class="container container-form">
     <div class="wrapper">
       <section class="contact">
@@ -242,5 +310,6 @@
       </div>
     </footer>
   <script src="js/main.js"></script>
+  <script src="js/calc.js"></script>
 </body>
 </html>

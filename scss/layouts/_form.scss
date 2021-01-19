@@ -123,3 +123,18 @@
     }
   }
 }
+.form__field select {
+  padding: 0 0 0 2rem;
+}
+.form__field-input--calc {
+  border: .1rem solid $color-main;
+  border-radius: .6rem;
+  padding-left: 2rem;
+}
+.checkbox--calc {
+  margin: 0;
+  padding: 0;
+}
+.form__label--calc .checkbox {
+  align-items: center;
+}
